@@ -90,3 +90,7 @@ form > button {
   font-size: 1em;
   grid-area: 2 / 2 / 3 / 3;
 }
+
+#sample-video {
+  width: 100%;
+}

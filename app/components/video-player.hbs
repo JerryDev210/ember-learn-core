@@ -1,0 +1,9 @@
+<video id="sample-video" {{play-when this.isPlaying}}>
+    <source src={{this.videoUrl}}/>
+    <track kind="captions" srclang="en" src="" />
+</video>
+{{#if this.isPlaying}}
+<button type="button" {{on "click" this.pause}}>Pause</button>
+{{else}}
+<button type="button" {{on "click" this.play}}>Play</button>
+{{/if}}
