@@ -1,6 +1,6 @@
-<form>
+<form {{on "input" this.updateMessage}} {{ on "submit" this.createMessage}}>
   <label for="message">Message</label>
-  <input id="message" />
+  <input id="message" name = "message" value={{this.message}}/>
   <button type="submit">
     Send
   </button>
