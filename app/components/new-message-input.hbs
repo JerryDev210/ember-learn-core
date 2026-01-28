@@ -2,7 +2,7 @@
   <label for="message">Message</label>
   {{!-- <Input id="message" name = "message" value={{this.message}} {{autofocus}} /> --}}
   {{!-- {{input id="message" value=this.message}} --}}
-  <input id="message" {{on "input" this.updateMessage}} value={{this.message}}/>
+  <input id="message" {{on "input" this.updateMessage}} value={{this.message}} {{autofocus}} />
   <button type="submit">
     Send
   </button>
