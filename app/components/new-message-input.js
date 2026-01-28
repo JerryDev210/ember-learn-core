@@ -7,8 +7,7 @@ export default class NewMessageInput extends Component {
 
   @action
   updateMessage(event) {
-    let formData = new FormData(event.currentTarget);
-    this.message = formData.get('message');
+    this.message = event.target.value;
   }
   @action
   createMessage(event) {
